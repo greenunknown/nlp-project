@@ -1,1 +1,9 @@
 experiments/
+nlp-project-proposal/*.aux
+nlp-project-proposal/*.bbl
+nlp-project-proposal/*.blg
+nlp-project-proposal/*.fdb_latexmk
+nlp-project-proposal/*.fls
+nlp-project-proposal/*.log
+nlp-project-proposal/*.out
+nlp-project-proposal/*.gz
