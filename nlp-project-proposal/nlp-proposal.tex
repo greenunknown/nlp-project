@@ -24,7 +24,7 @@
 % and will typically save some space.
 \usepackage{microtype}
 
-%\aclfinalcopy % Uncomment this line for the final submission
+\aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
 
 %\setlength\titlebox{5cm}
@@ -55,15 +55,45 @@ These instructions should be used for both papers submitted for review and for f
 Authors are asked to conform to all the directions reported in this document.
 \end{abstract}
 
-\section{Basic Information}
-
 \section{An Existing Research Paper Survey}
 
 \subsection{Summary}
 
+\paragraph{}
+In the paper, Radford et al describe GPT-2, a language model (LM) used to learn natural language (NL) 
+tasks without any explicit supervision. These NL tasks include question-answering, machine translation, 
+reading comprehension, and summarization. GPT-2 is their largest model being a 1.5B parameter Transformer 
+that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot 
+setting (very few or no labeled data, generalize on datasets it hasn’t been trained on before i.e. 
+classifying on the fly). The approach the authors take involves language modeling: the process of breaking 
+natural language down into understandable pieces. Their speculation is that “a language model with sufficient 
+capacity will begin to learn to infer and perform tasks demonstrated in natural language sequences in 
+order to better predict them, regardless of their method of procurement. If a language model is able to do 
+this it will be, in effect performing unsupervised multitask learning.” The model they utilized is a modified 
+version of the GPT (Generative Pre-trained Transformer) platform with an order of magnitude more parameters 
+and a few other modifications, including data preparation.
+
+
 \subsection{Bibliographical info}
 
+\begin{itemize}
+  \item Title: Language Models are Unsupervised Multitask Learners
+  \item Authors: Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever
+  \item Publication venue: persagen.com
+  \item Publication year: 2019
+  \item URL: \url{http://www.persagen.com/files/misc/radford2019language.pdf}
+\end{itemize}
+
 \subsection{Background}
+
+\paragraph{}
+The authors mention the importance of their work as a combination of two lines of work: multitask 
+learning and zero-shot methods. Their motivation for working on multitask learning is with the aim 
+to provide generalization to the model so it can perform a wide range of tasks and not just specific 
+tasks like other NL models. Their motivation for working with zero-shot methods, which are ones that 
+require minimal or no supervised data, is to provide a solution to the issues of scaling datasets that 
+is inherent with prior multitask learning techniques. By combining these two methods, the authors aim 
+to provide the benefits of both in order to further improve performance for natural language tasks. 
 
 \subsection{Summary of contributions}
 
@@ -87,27 +117,6 @@ Authors are asked to conform to all the directions reported in this document.
 
 \subsection{Evaluation}
 
-\subsection{Title and Authors}
-\label{ssec:title-authors}
-
-Center the title, author's name(s) and affiliation(s) across both columns.
-Do not use footnotes for affiliations.
-Place the title centered at the top of the first page, in a 15-point bold font.
-Long titles should be typed on two lines without a blank line intervening.
-Put the title 2.5 cm from the top of the page, followed by a blank line, then the author's names(s), and the affiliation on the following line.
-Do not use only initials for given names (middle initials are allowed).
-Do not format surnames in all capitals (\emph{e.g.}, use ``Mitchell'' not ``MITCHELL'').
-Do not format title and section headings in all capitals except for proper names (such as ``BLEU'') that are
-conventionally in all capitals.
-The affiliation should contain the author's complete address, and if possible, an electronic mail address.
-
-The title, author names and addresses should be completely identical to those entered to the electronical paper submission website in order to maintain the consistency of author information among all publications of the conference.
-If they are different, the publication chairs may resolve the difference without consulting with you; so it is in your own interest to double-check that the information is consistent.
-
-Start the body of the first page 7.5 cm from the top of the page.
-\textbf{Even in the anonymous version of the paper, you should maintain space for names and addresses so that they will fit in the final (accepted) version.}
-
-
 \subsection{References}
 
 \section*{Acknowledgments}
@@ -116,7 +125,7 @@ The acknowledgments should go immediately before the references. Do not number t
 \textbf{Do not include this section when submitting your paper for review.}
 
 \bibliographystyle{acl_natbib}
-\bibliography{anthology,acl2021}
+\bibliography{anthology,nlp-proposal}
 
 %\appendix
 
